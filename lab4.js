@@ -1,5 +1,5 @@
-//Problema 1 //Resultado en Consola
-var num1 = prompt("Dame un número mayor a 0");
+//Problema 1 Resultado en Consola
+let num1 = prompt("Dame un número mayor a 0");
 document.write("pn")
 var i;
 let tablee = "<table><tbody>";
@@ -25,7 +25,7 @@ for (i=1;i<=num1;i++){
 }
 tablee+= "</tr>";
 tablee = "</tbody></table>";
-document.write(tabee)
+document.write(tablee)
 
 
 //Problema 2 Resultado en Consola
