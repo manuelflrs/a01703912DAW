@@ -27,22 +27,24 @@ document.write("</tr>");
 document.write("</tbody></table>");
 
 
-//Problema 2
+//Problema 2 Resultado en Consola
 startTime = new Date();
 var resultado = prompt("Dame un número del 0 al 40 para adivinar la suma");
 endTime = new Date();
     var x1 = Math.floor((Math.random()*20)+1);
     var x2 = Math.floor((Math.random() * 20) + 1);
 var respuesta = x1 + x2;
-var tiempo = (endTime - startTime)/1000
+var tiempo = (endTime - startTime)/1000;
     alert("El resultado fue "+respuesta+" Tu nos diste "+ resultado + " Tardaste: " + tiempo + "s");
 //Problema 3 Resultado 
-var prueba = [1,9,9,7];
-var prueba2 = [-2,0,-3,0,2,3];
+let prueba = [1,9,9,7];
+let prueba2 = [-2,0,-3,0,2,3];
 function contador(arrayNums) {
-    var zero,pos,neg = 0;
-    for (x=0,x<arrayNums.length,x++ {
-        if (arrayNums[x] ==0) {
+    var zero= 0;
+    var pos = 0;
+    var neg = 0;
+    for (x=0;x<arrayNums.length;x++) {
+        if (arrayNums[x] == 0) {
             zero ++;
         }
         if (arrayNums[x] <0) {
@@ -53,15 +55,11 @@ function contador(arrayNums) {
         }
     }
     var message = "El array tuvo " + neg + " números negativos, " + zero + " zeros, y " + pos + " números positivos";
-    return message;
+    document.write(message);
+    document.write("<br>")
 }
-alert(contador(prueba));
-alert(contador(prueba2));
-
-console.log('inverso: ', inverso);
-
-var reversed = inverso.reverse();
-console.log('reversed: ', reversed);
+contador(prueba);
+contador(prueba2);
 
 //Problema 5 Resultado en consola
 var inverso = [1,9,9,7];
@@ -71,7 +69,7 @@ var reversed = inverso.reverse();
 console.log('reversed: ', reversed);
 
 //Problema 6
-alert("¿Te alcanza para un gansito del oxxo?")
+alert("¿Te alcanza para un gansito del oxxo?");
 var dinero = prompt("¿Cuánto dinero tienes?");
 
 if (dinero <= 0) {
@@ -79,5 +77,5 @@ if (dinero <= 0) {
 } else if (dinero > 12) {
     alert("Si te alcanza! :D Cuesta $12 y tienes $" + dinero + ".");
 } else if (dinero <= 11) {
-    alert("No te alcanza :( ")
+    alert("No te alcanza :( ");
 }
