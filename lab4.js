@@ -2,7 +2,7 @@
 let num1 = prompt("Dame un número mayor a 0");
 document.write("pn")
 var i;
-let tablee = "<table><tbody>";
+var tablee = "<table><tbody>";
 tablee+= "<tr>";
 for (i=1;i<=num1;i++){
     tablee += "<td>";
