@@ -25,7 +25,7 @@ for (i=1;i<=num1;i++){
 }
 tablee+= "</tr>";
 tablee = "</tbody></table>";
-document.write(tablee)
+console.logc(tablee)
 
 
 //Problema 2 Resultado en Consola
