@@ -1,6 +1,6 @@
 //Problema 1 //Resultado en Consola
 var num1 = prompt("Dame un número mayor a 0");
-
+document.write("pn")
 var i;
 let tablee = "<table><tbody>";
 tablee+= "<tr>";
