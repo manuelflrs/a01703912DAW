@@ -56,26 +56,50 @@ function contador(arrayNums) {
     }
     var message = "El array tuvo " + neg + " números negativos, " + zero + " zeros, y " + pos + " números positivos";
     document.write(message);
-    document.write("<br>")
+    document.write("<br>");
 }
 contador(prueba);
 contador(prueba2);
+//Problema 4
+var prueban = [[1,3,4,5,7], [2,4,3,2,6], [3,4,6,7,2]];
+var prueban2 = [[1,1,1,1,1], [2,5,3,2,6], [55,4,6,7,2]];
+function promedio(matriz) {
+    var resultados = [];
+    for (y=0;y<matriz.length;y++) {
+        var count = 0;
+        for (x=0;x<matriz[y].length;x++) {
+            count += matriz[y][x];
+        }
+        var ncount = count /matriz[y].length;
+        
+        resultados.push(ncount);
+    }
+    document.write("Los promedios son" + resultados);
+    document.write("<br>");
+}
+promedio(prueban);
+promedio(prueban2);
 
-//Problema 5 Resultado en consola
-var inverso = [1,9,9,7];
-console.log('inverso: ', inverso);
+//Problema 5 Resultado 
+function reverse_a_number(n)
+{
+	n = n + "";
+	newNum =  n.split("").reverse().join("");
+    document.write(newNum);
+    document.write("<br>");
+}
+reverse_a_number(123);
+reverse_a_number(23433);
 
-var reversed = inverso.reverse();
-console.log('reversed: ', reversed);
 
 //Problema 6
-alert("¿Te alcanza para un gansito del oxxo?");
+alert("¿Te alcanza para unas sabritas?");
 var dinero = prompt("¿Cuánto dinero tienes?");
 
 if (dinero <= 0) {
-    alert("Tu dinero es negativo checa tu banco, que tengas un buen día");
+    alert("Tu dinero es negativo o no tienes, checa tu banco");
 } else if (dinero > 12) {
-    alert("Si te alcanza! :D Cuesta $12 y tienes $" + dinero + ".");
+    alert("Si te alcanza! Cuesta $10 y tienes $" + dinero + ".");
 } else if (dinero <= 11) {
     alert("No te alcanza :( ");
 }
