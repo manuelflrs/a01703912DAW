@@ -1,6 +1,6 @@
 //Problema 1 Resultado en Consola
 let num1 = prompt("Dame un número mayor a 0");
-document.write("pn")
+
 var i;
 document.write("<table><tbody>");
 document.write("<tr>");
@@ -28,11 +28,14 @@ document.write("</tbody></table>");
 
 
 //Problema 2 Resultado en Consola
+startTime = new Date();
 var resultado = prompt("Dame un número del 0 al 40 para adivinar la suma");
+endTime = new Date();
     var x1 = Math.floor((Math.random()*20)+1);
     var x2 = Math.floor((Math.random() * 20) + 1);
 var respuesta = x1 + x2;
-    console.log("El resultado fue "+respuesta+" Tu nos diste "+ resultado);
+var tiempo = endTime - startTime
+    alert("El resultado fue "+respuesta+" Tu nos diste "+ resultado + " Tardaste: " + tiempo);
 
 //Problema 5 Resultado en consola
 var inverso = [1,9,9,7];
