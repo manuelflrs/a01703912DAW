@@ -2,30 +2,29 @@
 let num1 = prompt("Dame un número mayor a 0");
 document.write("pn")
 var i;
-var tablee = "<table><tbody>";
-tablee+= "<tr>";
+document.write("<table><tbody>");
+document.write("<tr>");
 for (i=1;i<=num1;i++){
-    tablee += "<td>";
-    tablee += i;
-    tablee += "</td>";
+    document.write("<td>");
+    document.write(i);
+    document.write("</td>");
 }
-tablee+= "</tr>";
-tablee+= "<tr>";
+document.write("</tr>");
+document.write("<tr>");
 for (i=1;i<=num1;i++){
-    tablee += "<td>";
-    tablee += Math.pow(i, 2);
-    tablee += "</td>";
+    document.write("<td>")
+    document.write(Math.pow(i, 2));
+    document.write("</td>")
 }
-tablee+= "</tr>";
-tablee+= "<tr>";
+document.write("</tr>");
+document.write("<tr>");
 for (i=1;i<=num1;i++){
-    tablee += "<td>";
-    tablee += Math.pow(i, 3);
-    tablee += "</td>";
+    document.write("<td>");
+    document.write(Math.pow(i, 3));
+    document.write("</td>");
 }
-tablee+= "</tr>";
-tablee = "</tbody></table>";
-console.log(tablee)
+document.write("</tr>");
+document.write("</tbody></table>");
 
 
 //Problema 2 Resultado en Consola
