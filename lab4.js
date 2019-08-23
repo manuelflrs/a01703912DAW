@@ -34,8 +34,8 @@ endTime = new Date();
     var x1 = Math.floor((Math.random()*20)+1);
     var x2 = Math.floor((Math.random() * 20) + 1);
 var respuesta = x1 + x2;
-var tiempo = endTime - startTime
-    alert("El resultado fue "+respuesta+" Tu nos diste "+ resultado + " Tardaste: " + tiempo);
+var tiempo = (endTime - startTime)/1000
+    alert("El resultado fue "+respuesta+" Tu nos diste "+ resultado + " Tardaste: " + tiempo + "s");
 
 //Problema 5 Resultado en consola
 var inverso = [1,9,9,7];
