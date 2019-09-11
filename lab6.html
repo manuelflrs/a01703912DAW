@@ -8,6 +8,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <title>Laboratorio</title>
 </head>
@@ -21,15 +24,16 @@
     <section>
         <nav>
             <ul class="menu">
-                <li class="menu"><a href="#lab1">Lab1</a></li>
+                <li class="menu"><a href="/index.html">Lab1</a></li>
             </ul>
         </nav>
-        <h3>Documentos dinámicos con JavaScript</h3>
-<p>Mueve el portero </p>
+    <div class="jumbotron">
+    <h3>Documentos dinámicos con JavaScript</h3>
+    <p>Mueve el portero </p>
     
     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> aqui</div>
     <br>
-    <img id="drag1" src="hock.jpg" draggable="true" ondragstart="drag(event)" width="100" height="69">
+    <img id="drag1" class="img-rounded" src="hock.jpg" draggable="true" ondragstart="drag(event)" width="100" height="69">
     <p>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
     ¿Cuáles son los valores estándar para la propiedad visibility?
     ¿Qué es el zIndex y para qué sirve?</p>
@@ -41,6 +45,11 @@
     
     <p>La propiedad z-index en CSS se utiliza para ordenar los elementos que se superpongan entre sí. Con la propiedad z-index podemos controlar qué elemento iría encima y cual debajo, como si el documento tuviera profundidad, tres dimensiones en lugar de dos</p>
     
+    
+    <p> lab 7 pregunta: Describe Material design</p>
+    <p>Material design es una normativa de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. Fue desarrollado por Google y anunciado en la conferencia Google I/O celebrada el 25 de junio de 2014. Ampliando la interfaz de tarjetas vista por primera vez en Google Now.</p>
+    </div>    
+    
         <article class="container">
                 <div class="row">
                     
@@ -48,20 +57,7 @@
 
 
                     </div>
-                    <div class="col s6 center">
-                          <!-- Dropdown Trigger -->
-                        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Dropdown</a>
-
-                        <!-- Dropdown Structure -->
-                        <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#!">Manuel</a></li>
-                            <li><a href="#!">Flores</a></li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li><a href="#!">Ramirez</a></li>
-                            <li><a href="#!"><i class="material-icons">view_module</i>Microsoft</a></li>
-                            <li><a href="#!"><i class="material-icons">cloud</i>Apple</a></li>
-                        </ul>
-                    </div>
+                    
                      <div class="col s6 center">
                             <!-- Dropdown Trigger -->
                             <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Hobbies</a>
